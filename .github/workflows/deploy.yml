@@ -49,5 +49,7 @@ jobs:
 
       - name: Deploy to kubernetes
         run: kubectl apply -f deployment-service.yml
+      - name: Deploy to kubernetes
+        run: kubectl delete -f deployment-service.yml
 
       
